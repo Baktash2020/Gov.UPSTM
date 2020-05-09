@@ -86,27 +86,27 @@ public class Register {
 
 	@When("^user enters User Name$")
 	public void user_enters_User_Name()  {
-	    
+	RP.getusername().sendKeys("AqdasJan");
 		
 	}
 
 	@When("^user enters PassWord$")
 	public void user_enters_PassWord()  {
-
+    RP.getpassword().sendKeys("123987");
 
 		
 	}
 
 	@When("^user confirms passWord$")
 	public void user_confirms_passWord()  {
-
+    RP.getconfirmpassword().sendKeys("123987");
 
 		
 	}
 
 	@When("^user clicks Submit$")
 	public void user_clicks_Submit()  {
-
+    
 
 		
 		

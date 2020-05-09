@@ -1,6 +1,8 @@
 #Author: your.email@your.domain.com
 #Keywords Summary :
-    Feature: Register Page
+
+
+   Feature: Register Page
    
    @Regression 
   Scenario Outline: Register Page
@@ -29,5 +31,3 @@
       
       
  
-     
-    

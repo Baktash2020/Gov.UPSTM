@@ -1,7 +1,8 @@
 #Author: your.email@your.domain.com
 #Keywords Summary :
+#Feature: List of scenarios.
 
-   Feature: Sign In 
+     Feature: Sign In 
   
 
     @Regression
@@ -11,5 +12,4 @@
     When user enters Password in mercury textbox
     And user clicks sign in button
     Then user closes Mercury sign in page
-
-  
+     
