@@ -3,6 +3,9 @@
 
 
    Feature: Birth Month
+   @FaceRegression
+  
+  
   
     Scenario: Birth Month
     Given user is in Birth Month Home Page

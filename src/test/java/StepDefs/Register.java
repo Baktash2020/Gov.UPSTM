@@ -17,13 +17,13 @@ public class Register {
 	
 	@Given("^user is in the Mercury HomePage$")
 	public void user_is_in_the_Mercury_HomePage() throws InterruptedException  {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\GoogleChrome\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
 		driver= new ChromeDriver();
 		RP = new RegisterP (driver);
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("http://newtours.demoaut.com/mercuryregister.php?osCsid=c4d65d2675ac03bacd83ce6abf7e89af");
+		driver.navigate().to("http://newtours.demoaut.com/mercuryregister.php?osCsid=402b45bf84d1ec2117274f8c31bfccd0");
 		Thread.sleep(3000);
 		
 	}

@@ -20,10 +20,10 @@ public class LoanAmountSteps {
 	@Given("^user is in Loan Amount Home Page$")
 	public void user_is_in_Loan_Amount_Home_Page()  {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\GoogleChrome\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("https://www.amcfg.com/loan-programs/");
+		driver.navigate().to("");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

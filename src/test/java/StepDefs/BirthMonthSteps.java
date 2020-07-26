@@ -17,16 +17,64 @@ public class BirthMonthSteps {
 	@Given("^user is in Birth Month Home Page$")
 	public void user_is_in_Birth_Month_Home_Page() throws InterruptedException  {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\GoogleChrome\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
 		driver= new ChromeDriver();
 		Thread.sleep(2000);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("https://www.facebook.com/");
+		driver.navigate().to("");
 		Thread.sleep(2000);
+		
+		//driver.navigate().forward();
+		// When User go back to main page
 		
 	    
 	}
+	
+	
+	@When("^User clicks on Terms$")
+	public void user_clicks_on_Terms()  {
+		driver.findElement(By.id("terms-link")).click();
+		
+		
+	    
+	}
+	
+	@When("^User close the page$")
+	public void user_close_the_page()   {
+     driver.close();
+     // And User close the page
+
+	}
+
+	@When("^User go back to main page$")
+	public void user_go_back_to_main_page()  {
+		driver.navigate().back();
+
+	    
+	}
+
+	@When("^User clicks on Policy Data$")
+	public void user_clicks_on_Policy_Data()  {
+    driver.findElement(By.id("privacy-link")).click();
+
+		
+		
+	}
+
+	@When("^User clicks on Cookies Policy$")
+	public void user_clicks_on_Cookies_Policy()               {
+		driver.findElement(By.id("cookie-use-link")).click();
+	    
+	}
+
+	@When("^User Clicks on Creat a Page for Celebrity$")
+	public void user_Clicks_on_Creat_a_Page_for_Celebrity()     {
+		driver.findElement(By.linkText("Create a Page")).click();
+	     
+	}
+
+
 	
 	
 	@When("^user selects Female$")
@@ -127,6 +175,57 @@ public class BirthMonthSteps {
 		
 		
 	}
+	
+	
+	@When("^User Enters Email or Phone in The text box$")
+	public void user_Enters_Email_or_Phone_in_The_text_box()    {
+     driver.findElement(By.name("email")).sendKeys("Shamila");
+
+	}
+
+	@When("^User Enters Password in The text box$")
+	public void user_Enters_Password_in_The_text_box()  {
+    driver.findElement(By.name("pass")).sendKeys("Taagor");
+
+		
+		
+	}
+
+	@When("^User clicks On Log In$")
+	public void user_clicks_On_Log_In() throws Throwable {
+		driver.findElement(By.id("u_0_b")).click();
+	    
+	}
+	
+	@When("^user enters \"([^\"]*)\" in the FirstName text box$")
+	public void user_enters_in_the_FirstName_text_box(String FirstName)  {
+	    driver.findElement(By.name("firstname")).sendKeys(FirstName);
+	}
+
+	@When("^user enters \"([^\"]*)\" in The LastName text box$")
+	public void user_enters_in_The_LastName_text_box(String LastName)  {
+	    driver.findElement(By.name("lastname")).sendKeys(LastName);
+	}
+
+	@When("^user enters \"([^\"]*)\" in The MobileNumber text box$")
+	public void user_enters_in_The_MobileNumber_text_box(String MobileNumber)  {
+		driver.findElement(By.name("reg_email__")).sendKeys(MobileNumber);
+	    
+	}
+
+	@When("^user enters \"([^\"]*)\" in The NewPassword text box$")
+	public void user_enters_in_The_NewPassword_text_box(String NewPassword)  {
+		driver.findElement(By.name("reg_passwd__")).sendKeys(NewPassword);
+	    
+	}
+	
+	
+	
+	
+	
+	
+	
+
 
 
 	

@@ -18,7 +18,7 @@ public class second {
 	@Given("^user is in the Mercury Home Page$")
 	public void user_is_in_the_Mercury_Home_Page() throws InterruptedException  {
      
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\GoogleChrome\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
 		driver= new ChromeDriver();
 		
 		SP = new secondPages (driver);

@@ -24,10 +24,10 @@ public class LoanProgramDropDownSteps {
 	@Given("^user is in the Home Page of American$")
 	public void user_is_in_the_Home_Page_of_American()  {
 		
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\GoogleChrome\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().deleteAllCookies();
-		driver.navigate().to("https://www.amcfg.com/loan-programs/");
+		driver.navigate().to("");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		

@@ -5,7 +5,7 @@
  
  
     Feature: Selecting Custom
-    
+    @FaceRegression
     Scenario: Selecting Custom
     Given user is in Birth Month Home Page
     When User Selects "Custom"
