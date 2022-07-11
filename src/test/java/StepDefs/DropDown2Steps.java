@@ -17,7 +17,7 @@ public class DropDown2Steps {
 	public void user_is_on_the_Main_Page_to_select_birthday() throws InterruptedException  {
 		
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nilla\\Desktop\\Chro\\chromedriver.exe");
 		driver= new ChromeDriver();
 		Thread.sleep(2000);
 		driver.manage().window().maximize();

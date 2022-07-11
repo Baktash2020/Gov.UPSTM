@@ -17,7 +17,7 @@ public class Register {
 	
 	@Given("^user is in the Mercury HomePage$")
 	public void user_is_in_the_Mercury_HomePage() throws InterruptedException  {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aqdas\\Desktop\\Chromed\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nilla\\Desktop\\Chro\\chromedriver.exe");
 		driver= new ChromeDriver();
 		RP = new RegisterP (driver);
 		Thread.sleep(2000);
